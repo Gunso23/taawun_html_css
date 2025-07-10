@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="A review of semantic HTML elements and their usage in web development.">
+    <meta property="og:title" content="Semantic HTML Review">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.freecodecamp.org/curriculum/universal/fcc_meta_1920X1080-indigo.png">
+    <meta property="og:url" content="https://www.freecodecamp.org">
+    <meta property="og:description"
+        content="A review of semantic HTML elements and their usage in web development.">
+    <meta property="og:site_name" content="FreeCodeCamp">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Semantic HTML Review">
+    <meta name="twitter:description"
+        content="A review of semantic HTML elements and their usage in web development.">
+    <meta name="twitter:image" content="https://cdn.freecodecamp.org/curriculum/universal/fcc_meta_1920X1080-indigo.png">
+    <meta name="twitter:site" content="@freeCodeCamp">
+    <meta name="twitter:creator" content="@richardmiruka">
+    <link rel="stylesheet" href="https://cdn.freecodecamp.org/platform/universal/fcc_style.css">
+    <link rel="stylesheet" href="https://cdn.freecodecamp.org/platform/universal/fcc_semantic_html.css">
+    <link rel="icon" href="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+        type="image/png">
+    <meta name="author" content="Richard Miruka">
+    <meta name="keywords" content="HTML, semantic elements, web development, accessibility, best practices">
+    <meta name="theme-color" content="#4CAF50">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Semantic HTML Review</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Semantic HTML Review</h1>
+        <nav>
+            <ul>
+                <li><a href="#structure">Structural Hierarchy</a></li>
+                <li><a href="#elements">Semantic Elements</a></li>
+                <li><a href="#examples">Examples</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="structure">
+            <h2>Structural Hierarchy</h2>
+            <p>
+                Proper use of heading elements ensures your content has a clear structure. Use <code>&lt;h1&gt;</code>
+                for top-level headings down to <code>&lt;h6&gt;</code> for subheadings.
+            </p>
+            <h3>Example of heading hierarchy</h3>
+            <h1>Main Title</h1>
+            <h2>Subsection</h2>
+            <h3>Sub-subsection</h3>
+            <h4>Detail</h4>
+        </section>
+
+        <section id="elements">
+            <h2>Semantic Elements Overview</h2>
+            <p>Semantic HTML gives meaning to web content through meaningful tags like <code>&lt;header&gt;</code>,
+                <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;figure&gt;</code>, and more.</p>
+
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"
+                    alt="Example of a cat for figure element">
+                <figcaption>An example of a semantic <code>&lt;figure&gt;</code> element.</figcaption>
+            </figure>
+        </section>
+
+        <section id="examples">
+            <h2>Examples of Semantic Inline and Block Elements</h2>
+
+            <article>
+                <h3>Emphasis & Importance</h3>
+                <p>Never give up on <em>your</em> dreams.</p>
+                <p><strong>Warning:</strong> This product may cause allergic reactions.</p>
+            </article>
+
+            <article>
+                <h3>Idiomatic & Highlighted Text</h3>
+                <p>There is a certain <i lang="fr">je ne sais quoi</i> in the air.</p>
+                <p>
+                    We tested several products including the <b>SuperSound 3000</b>,
+                    the <b>QuickCharge Pro</b>, and the <b>Ecoclean Vacuum</b>.
+                </p>
+            </article>
+
+            <article>
+                <h3>Description Lists</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                </dl>
+            </article>
+
+            <article>
+                <h3>Quotations & Citations</h3>
+                <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+                    "Can you imagine what it would be like to be a successful developer?"
+                </blockquote>
+                <p>
+                    – Quincy Larson, <cite>How to Learn to Code and Get a Developer Job</cite>
+                </p>
+                <p>As Quincy Larson said, <q cite="https://www.freecodecamp.org/news/learn-to-code-book/">Momentum is
+                        everything.</q></p>
+            </article>
+
+            <article>
+                <h3>Abbreviations & Time</h3>
+                <p><abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.</p>
+                <p>The reservations are for <time datetime="2025-07-03T20:00">8:00 PM on July 3, 2025</time>.</p>
+            </article>
+
+            <article>
+                <h3>Superscript & Subscript</h3>
+                <p>2<sup>2</sup> equals 4.</p>
+                <p>Water is H<sub>2</sub>O.</p>
+            </article>
+
+            <article>
+                <h3>Code & Preformatted Text</h3>
+                <pre><code>body {
+  color: red;
+}</code></pre>
+            </article>
+
+            <article>
+                <h3>Unarticulated Annotation</h3>
+                <p>Use the <code>&lt;u&gt;</code> tag to show <u>inccccort</u> <u>spling</u> <u>issses</u>.</p>
+            </article>
+
+            <article>
+                <h3>Ruby Annotation</h3>
+                <p>Example of Japanese text with pronunciation:</p>
+                <ruby>
+                    明日 <rp>(</rp>
+                    <rt>Ashita</rt>
+                    <rp>)</rp>
+                </ruby>
+            </article>
+
+            <article>
+                <h3>Strikethrough</h3>
+                <p><s>Tomorrow's hike will be meeting at noon.</s></p>
+                <p>Due to weather conditions, the hike has been canceled.</p>
+            </article>
+
+            <article>
+                <h3>Contact and Address</h3>
+                <address>
+                    Contact us at: <a href="mailto:info@example.com">info@example.com</a><br>
+                    Call us: <a href="tel:+1234567890">+1 234 567 890</a><br>
+                    123 Web Lane, Internet City, WWW 404
+                </address>
+            </article>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
